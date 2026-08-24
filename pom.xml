@@ -37,10 +37,6 @@
     <hpi.bundledArtifacts>mxparser,xmlpull</hpi.bundledArtifacts>
     <hpi.strictBundledArtifacts>true</hpi.strictBundledArtifacts>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
-    <!-- Bumped from 2.492 to pick up the core l:card Jelly tag used by the
-         UI modernization pass (docs/UI_MODERNIZATION.md); the Design
-         Library plugin that documents/demos l:card itself requires 2.541,
-         so that's the version pinned here. -->
     <jenkins.baseline>2.541</jenkins.baseline>
     <jenkins.version>${jenkins.baseline}.3</jenkins.version>
     <spotbugs.effort>Max</spotbugs.effort>
