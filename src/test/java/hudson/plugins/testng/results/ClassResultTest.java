@@ -77,8 +77,9 @@ class ClassResultTest {
         String urlPrefix = build.getUrl() + PluginImpl.URL;
         HtmlPage page = r.createWebClient().goTo(urlPrefix + "/precheckins/LegacyOps/");
 
-        List<HtmlElement> elements =
-                DomNodeUtil.selectNodes(page, "//div[starts-with(@id, 'run-')]//div[@class='jenkins-card__title'][starts-with(normalize-space(text()), 'Test Methods')]");
+        List<HtmlElement> elements = DomNodeUtil.selectNodes(
+                page,
+                "//div[starts-with(@id, 'run-')]//div[@class='jenkins-card__title'][starts-with(normalize-space(text()), 'Test Methods')]");
 
         assertEquals(testRunMap.size(), elements.size());
 

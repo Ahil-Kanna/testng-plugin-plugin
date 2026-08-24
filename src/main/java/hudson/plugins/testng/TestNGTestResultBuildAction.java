@@ -199,8 +199,7 @@ public class TestNGTestResultBuildAction extends AbstractTestResultAction
                 break;
             }
             String name = (m.getParent() instanceof hudson.plugins.testng.results.ClassResult)
-                    ? ((hudson.plugins.testng.results.ClassResult) m.getParent()).getCanonicalName() + "."
-                            + m.getName()
+                    ? ((hudson.plugins.testng.results.ClassResult) m.getParent()).getCanonicalName() + "." + m.getName()
                     : m.getName();
             lines.add(label + ": " + name);
             shown++;
